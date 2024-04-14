@@ -11,7 +11,8 @@ SOURCES += \
         FileTracker.cpp \
         main.cpp
 HEADERS += \
-        FileTracker.h
+        FileTracker.h \
+        FileMonitor.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
