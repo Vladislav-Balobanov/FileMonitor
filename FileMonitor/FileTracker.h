@@ -8,13 +8,13 @@ class FileTracker
 {
 public:
     FileTracker(const QString& fileName);
-    bool IsExist();
-    bool IsSizeChanged();
+    void CkeckExistence();
+    void CheckSize();
 signals:
     bool SizeChanged();
     bool ExistenceChanged();
 private:
-    QString _fileName;
-    size_t _fileSize;
-    bool _existense;
+    size_t _size;
+    bool _existence;
+    QFileInfo _file;
 };
